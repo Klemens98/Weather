@@ -15,6 +15,9 @@ form.addEventListener("submit", e => {
   const inputVal = input.value;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
 
+
+
+  // Checking if a city is already there and if so resetting the list.
   const listItems = list.querySelectorAll(".ajax-section .city");
   const listItemsArray = Array.from(listItems);
   const cityList = document.getElementById("city-list");
@@ -33,6 +36,7 @@ form.addEventListener("submit", e => {
     weather[0]["icon"]
     }@2x.png`;
     
+    //Creating the element for the weather data.
     const li = document.createElement("li");
     li.classList.add("city");
     const markup = `
