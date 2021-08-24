@@ -4,8 +4,8 @@ const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
 
-//API Key
-const apiKey = '2d6726dd4c8e29e9e80b069cf3435bdb';
+// Insert API Key
+const apiKey = 'Your API Key';
  
  
 
